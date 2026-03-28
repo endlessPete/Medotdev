@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock In Interface</title>
+    <style>
+        body {
+            background-color: #2f3b4a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .clock-container {
+            margin: 20px auto;
+        }
+        .time-display {
+            font-size: 48px;
+        }
+        .secondary-time {
+            font-size: 24px;
+            color: #b0bec5;
+        }
+        .clock-in-button {
+            background-color: #29b6f6;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #263238;
+            padding: 10px 0;
+        }
+        .footer div {
+            color: #b0bec5;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="time-display">00:00:00</div>
+        <div class="secondary-time">08:12:00</div>
+        <button class="clock-in-button">Clock In</button>
+    </div>
+    
+    <div class="footer">
+        <div>Clock</div>
+        <div>Time Cards</div>
+        <div>Schedule</div>
+        <div>Reports</div>
+    </div>
+</body>
+</html>
