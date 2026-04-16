@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Product Release</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        background: #0d0d0d;
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    /* Smooth fade-in */
+    .fade {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1.2s ease forwards;
+    }
+    @keyframes fadeIn {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 100vh;
+        background: radial-gradient(circle at top, #1a1a1a, #000);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .hero h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        background: linear-gradient(90deg, #00d4ff, #7a5cff, #ff00c8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: glow 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+        from { filter: drop-shadow(0 0 10px #00d4ff); }
+        to { filter: drop-shadow(0 0 25px #ff00c8); }
+    }
+
+    .hero p {
+        max-width: 600px;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        opacity: 0.85;
+    }
+
+    .cta {
+        margin-top: 40px;
+        padding: 14px 32px;
+        background: linear-gradient(90deg, #00d4ff, #7a5cff);
+        border: none;
+        border-radius: 40px;
+        color: #fff;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .cta:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #7a5cff;
+    }
+
+    /* Features Section */
+    .features {
+        padding: 80px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .features h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+        background: linear-gradient(90deg, #7a5cff, #ff00c8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 30px;
+    }
+
+    .card {
+        background: #111;
+        padding: 30px;
+        border-radius: 16px;
+        border: 1px solid #222;
+        transition: 0.3s;
+    }
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0 20px #7a5cff55;
+    }
+
+    .card h3 {
+        margin-top: 0;
+        color: #00d4ff;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 40px;
+        opacity: 0.6;
+        font-size: 0.9rem;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero fade">
+    <h1>Your Product Name</h1>
+    <p>The next evolution of innovation. Designed with precision, powered by creativity, and built for the future.</p>
+    <button class="cta">Download Now</button>
+</section>
+
+<!-- FEATURES -->
+<section class="features fade">
+    <h2>What’s New</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>✨ Feature One</h3>
+            <p>A short description of your first standout feature. Make it bold and exciting.</p>
+        </div>
+        <div class="card">
+            <h3>⚡ Feature Two</h3>
+            <p>Highlight the performance, speed, or efficiency improvements here.</p>
+        </div>
+        <div class="card">
+            <h3>🔒 Feature Three</h3>
+            <p>Security, reliability, or stability enhancements go here.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Your Product — All Rights Reserved
+</footer>
+
+</body>
+</html>
